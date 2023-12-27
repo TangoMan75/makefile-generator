@@ -1,0 +1,13 @@
+config:
+  filename:    {{ FILENAME }}
+  project:     {{ PROJECT }}
+  version:     {{ VERSION }}
+  description: {{ DESCRIPTION }}
+  padding:     {{ PADDING }}
+  author:      {{ AUTHOR }}
+  email:       {{ EMAIL }}
+  year:        {{ YEAR }}
+  license:     {{ LICENSE }}
+  git_server:  {{ GIT_SERVER }}
+  git_user:    {{ GIT_USER }}
+  repository:  {{ REPOSITORY }}

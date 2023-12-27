@@ -1,0 +1,23 @@
+name: Sass CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  sass:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@main
+
+    - name: Install Sass
+      run: yarn global add sass
+
+    - name: Compile Sass
+      run: sass ./scss/index.scss ./css/index.css
